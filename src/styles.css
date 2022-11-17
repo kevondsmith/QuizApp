@@ -1,0 +1,220 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.mainCard {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  mainCard {
+    padding: 3rem 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  mainCard {
+    max-width: 70rem;
+  }
+}
+
+.introCard {
+  min-width: 100%;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+}
+
+.qnaCard {
+  min-width: 100%;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+.summaryCard {
+  min-width: 100%;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+.summarySecondaryCard {
+  margin-top: 25px;
+  margin-right: 25px;
+  margin-left: 25px;
+  min-width: 75%;
+  height: 20rem;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+.quizSummary {
+  padding: 10px;
+  vertical-align: center;
+  text-align: middle;
+}
+
+.card-img,
+.card-img-top {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  height: 350px;
+}
+
+.btn {
+  min-width: 50%;
+  align-items: flex;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  background-color: #fff;
+  border-radius: 7px;
+  font-size: 18px;
+  border: solid 5px #fff;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  padding: 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(4px);
+  color: #30414e;
+  background-color: #d85427;
+}
+
+.radio-btn-card input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radio-btn-card input[type="radio"]:focus + label {
+  transform: translateY(4px);
+  background-color: Black;
+  border-radius: 7px;
+  border: 5px dashed #444;
+}
+
+.radio-btn-card input[type="radio"]:checked + label {
+  transform: translateY(4px);
+  background-color: #d85427;
+  border-color: #fff;
+  color: #30414e;
+}
+
+.radio-btn-card label {
+  display: inline-block;
+  min-width: 50%;
+  align-items: flex;
+  color: Black;
+  background-color: #fff;
+  border-radius: 7px;
+  border: solid 5px #fff;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  padding: 15px;
+  margin: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.radio-btn-card label:hover {
+  transform: translateY(4px);
+  background: #d85427;
+  color: #30414e;
+}
+
+.nextbtn {
+  display: inline-block;
+  min-width: 50%;
+  align-items: flex;
+  color: Black;
+  background-color: #fff;
+  border-radius: 7px;
+  border: solid 5px #fff;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  padding: 15px;
+  margin: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  user-select: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.nextbtn:hover {
+  transform: translateY(4px);
+  background: #d85427;
+  color: #30414e;
+}
+
+h3 {
+  font-size: x-large;
+}
+
+h2 {
+  font-size: x-large;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+.titleImage {
+  margin-top: 25px;
+}
+.titleImageQuestions {
+  margin-top: 25px;
+}
+
+ul {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  list-style-type: none;
+}
+
+li {
+  text-align: center;
+}
